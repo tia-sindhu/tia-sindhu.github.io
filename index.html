@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tia Sindhu | Portfolio</title>
   <style>
     * {
@@ -155,45 +155,82 @@
 <body>
   <div class="container">
     <nav>
-      <h1>Tia Sindhu</h1>
+      <h1>Tia Sindhu's Project Portfolio</h1>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
+        <a href="#projects">Projects</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
 
-    <section class="hero">
-      <h2>Hi, I’m Tia.</h2>
+    <section class="hero" id="about">
+      <h2>Hi, I'm Tia.</h2>
       <p>
-        I’m a UIUC student studying Information & Data Science with minors in Computer Science and Statistics.
-        I’m interested in data science, machine learning, and building projects that solve real-world problems.
+        I'm an Information & Data Science student at UIUC interested in AI,
+        machine learning, analytics, and building products with data.
       </p>
     </section>
 
-    <h2 class="projects-title">Projects</h2>
+    <h2 class="projects-title" id="projects">Projects</h2>
 
-    <section class="projects-grid">
-      <a class="card-link" href="#">
+    <div class="projects-grid">
+      <a class="card-link" href="project-imdb.html">
         <div class="card">
-          <img src="mosaic-web.jpg" alt="Project preview">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="AI project">
           <div class="card-content">
-            <h3>STAT 207 Final Project</h3>
+            <h3>AI Hiring Bias Project</h3>
             <p>
-              A data science project focused on modeling, regression, and interpreting relationships in data.
+              Analyzed how AI hiring systems can improve efficiency while also
+              introducing fairness concerns across applicant groups.
             </p>
             <div class="tags">
               <span class="tag">Python</span>
               <span class="tag">Pandas</span>
-              <span class="tag">Regression</span>
+              <span class="tag">Machine Learning</span>
             </div>
           </div>
         </div>
       </a>
-    </section>
 
-    <footer>
-      © 2026 Tia Sindhu
+      <a class="card-link" href="#">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Data analysis project">
+          <div class="card-content">
+            <h3>Regression Analysis Project</h3>
+            <p>
+              Built predictive models and compared variable relationships using
+              regression, interaction effects, and model evaluation techniques.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Statistics</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card-link" href="#">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&q=80" alt="Portfolio project">
+          <div class="card-content">
+            <h3>Data Product Portfolio</h3>
+            <p>
+              A collection of technical and analytics projects focused on solving
+              real-world problems through data-driven decision making.
+            </p>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Visualization</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <footer id="contact">
+      <p>Email: tia.sindhu28@gmail.com | GitHub: tia-sindhu</p>
     </footer>
   </div>
 </body>
